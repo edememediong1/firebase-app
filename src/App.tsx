@@ -14,6 +14,10 @@ function App() {
   const [movieList, setMovieList] = useState<Movie[]>([])
 
   // New Movie State
+  const [newMovieTitle, setNewMovieTitle] = useState("");
+  const [newReleaseDate, setNewReleaseDate] = useState(0);
+  const [isNewMovieOscae, setIsNewMovieOscar] = useState(false)
+
 
   const moviesCollectionRef = collection(db, "movies")
   
